@@ -111,6 +111,11 @@ public class FieldExpression {
               HighlightSeverity.ERROR);
           return;
         }
+        else
+        {
+          // avoid NPE
+          return;
+        }
       }
 
       terms.add(new Term(property, index));
